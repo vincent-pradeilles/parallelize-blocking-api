@@ -1,6 +1,6 @@
 # parallelize-blocking-api
 
-This Xcode project shows how it is possible to use `RxSiwft` to wrap a synchronous API, thus making it easy to call in an asynchronous and multi-threaded fashion.
+This Xcode project shows how it is possible to use `RxSwift` to wrap a synchronous API, thus making it easy to call in an asynchronous and multi-threaded fashion.
 
 `BlockingDAO.swift` contains a blocking data access API.
 
