@@ -35,6 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let parallelStartTime = Date()
         _ = ParallelOrchestration.getShippingStatus(for: user)
+            .observeOn(MainScheduler.instance)
             .subscribe(onCompleted: {
                 print("Parallel API time :")
                 print(Date().timeIntervalSince(parallelStartTime))
